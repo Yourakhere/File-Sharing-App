@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:5000';  
+const API_BASE_URL = 'https://youakher-file-sharing-app.onrender.com';  
 
 export const UploadFile = async (data) => {
   try {
