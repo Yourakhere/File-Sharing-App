@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  background: linear-gradient(135deg, #4facfe, #8e2de2);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.wrapper {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 50px 40px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  color: #fff;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.app-description,
+.app-instruction {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.upload-button {
+  width: 160px;
+  height: 45px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.upload-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.result-container {
+  margin-top: 30px;
+  word-wrap: break-word;
+}
+
+.result-label {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.result-link {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer {
+  margin-top: 40px;
+}
+
+.footer-text {
+  font-size: 12px;
+  color: #ddd;
+}
+ 
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 40px 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .upload-button {
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 30px 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .app-description,
+  .app-instruction {
+    font-size: 14px;
+  }
+
+  .upload-button {
+    width: 120px;
+    height: 38px;
+    font-size: 15px;
+  }
+
+  .footer-text {
+    font-size: 10px;
+  }
+} 
+.uploads-list {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-top: 1px solid #ccc;
+}
+
+.uploads-list h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.uploads-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.uploads-list li {
+  margin-bottom: 0.5rem;
+}
+
+.uploads-list a {
+  color: #007bff;
+  text-decoration: none;
+  word-break: break-all;
+  transition: color 0.2s ease;
+}
+
+.uploads-list a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  background: linear-gradient(90deg, #3f51b5, #7b1fa2);  
+  color: #fff;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #ffcc00; 
+}
